@@ -5,11 +5,19 @@ public class HotelRoom
     private int roomStatus;
     private double roomRate;
 
-    public HotelRoom()
+    public HotelRoom() //constructors
         {
         }
+    public HotelRoom(int number, String type, int state, double rate)
+        {
+            roomNumber = number;
+            roomType = type;
+            roomStatus = state;
+            roomRate = rate;
+        }
     
-    public void setRoomNumber(int number)
+    
+    public void setRoomNumber(int number) //setter methods
         {
             roomNumber = number;
         }
@@ -31,7 +39,7 @@ public class HotelRoom
     
 
 
-    public int getRoomNumber()
+    public int getRoomNumber() // getter methods
         {
             return roomNumber;
         }

@@ -4,7 +4,7 @@ public class Lab2q1
     {
         HotelRoom roomA = new HotelRoom();
         HotelRoom roomB = new HotelRoom();
-        HotelRoom roomC = new HotelRoom(202, "Single", 0, 90)
+        HotelRoom roomC = new HotelRoom(202, "Single", 0, 90);
 
         roomA.setRoomNumber(200);
         roomA.setRoomType("Single");
