@@ -4,6 +4,7 @@ public class HotelRoom
     private String roomType;
     private int roomStatus;
     private double roomRate;
+    private boolean occupiedState;
 
     public HotelRoom() //constructors
         {
@@ -14,6 +15,14 @@ public class HotelRoom
             roomType = type;
             roomStatus = state;
             roomRate = rate;
+            if(rate == 1)
+                {
+                    occupiedState = true;
+                }
+            else
+                {
+                    occupiedState = false;
+                }
         }
     
     
@@ -36,6 +45,17 @@ public class HotelRoom
         {
             roomRate = rate;
         }
+    
+    public void setOccupied(int status)
+        {
+            boolean roomState = false;
+            if(status == 1)
+                {
+                    roomState = true;
+                }
+            occupiedState = roomState ;
+        }
+
     
 
 
@@ -69,7 +89,22 @@ public class HotelRoom
         {
             return roomRate;
         }
+    public boolean getOccupiedState()
+        {
+            return occupiedState;
+        }
     
+    public void isOccupied()
+        {
+            if(occupiedState)
+                {
+                    System.out.println("the room is occupied");
+                }
+            else
+                {
+                    System.out.println("the room is not occupied");
+                }
+        }
 
 
 }
