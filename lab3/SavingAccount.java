@@ -33,7 +33,7 @@ public class SavingAccount
             annualIntrestRate = newIntrest;
         }
 
-    public double getSavingBalanve()
+    public double getSavingBalance()
         {
             return savingBalance;
         }
